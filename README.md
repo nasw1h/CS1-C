@@ -17,7 +17,7 @@ Step 10: Print sum
 Step 11: Print rev
 Step 12: Stop
 ```
-Code:
+### Code:
 ```
 #include<stdio.h>
 
@@ -44,7 +44,7 @@ int main( )
    }
 }
 ```
-Output:
+### Output:
 ```
 Enter the number: 987
 Sumof digits = 24
