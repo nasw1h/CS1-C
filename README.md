@@ -22,8 +22,6 @@ Step 12: Stop
 ```
 #include<stdio.h>
 
-#include<stdio.h>
-
 int main( )
 {
    int num,sum=0,rev[10], d, i, j;
