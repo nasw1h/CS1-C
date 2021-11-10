@@ -1,6 +1,6 @@
 # C Program
 
-## 1. C program to find the sum of a given number and its reverse.
+## 1. C program to find the sum of a given number and its reverse
 
 ### Algorithm:
 ```yml
@@ -49,4 +49,64 @@ int main( )
 Enter the number: 987
 Sum of digits = 24
 Reverse of the number = 789
+```
+
+## 2. C program to find first N Fibonacci numbers
+
+### Algorithm:
+```yml
+
+```
+### Code:
+```c
+
+```
+### Output:
+```yml
+
+```
+
+## 3. C program to print pyramid pattern with *
+
+### Algorithm:
+```yml
+
+```
+### Code:
+```c
+
+```
+### Output:
+```yml
+
+```
+
+## 4. C program to find number of words in a sentence
+
+### Algorithm:
+```yml
+
+```
+### Code:
+```c
+
+```
+### Output:
+```yml
+
+```
+
+## 5. C Program to check whether a number is Prime or not
+
+### Algorithm:
+```yml
+
+```
+### Code:
+```c
+
+```
+### Output:
+```yml
+
 ```
