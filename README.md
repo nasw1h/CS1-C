@@ -1,6 +1,8 @@
-## 1. C program to find the sum of a given number and its reverse.
+# C Program
 
-### Algorithm:
+### 1. C program to find the sum of a given number and its reverse.
+
+Algorithm:
 ```
 Step  1: Start
 Step  2: Read number num
@@ -15,7 +17,7 @@ Step 10: Print sum
 Step 11: Print rev
 Step 12: Stop
 ```
-### Code:
+Code:
 ```
 #include<stdio.h>
 
@@ -42,7 +44,7 @@ int main( )
    }
 }
 ```
-### Output:
+Output:
 ```
 Enter the number: 987
 Sumof digits = 24
