@@ -1,49 +1,55 @@
 # C Program
 
 
-## 1.
+## 1. C program to find the sum of a given number and its reverse.
 
 ### Algorithm:
-
-- Start
-- Read a, b, c values
-- Compute d = b^2-4ac
-- if d > 0 then
-  - r1 = b+ sqrt (d)/(2*a)
-  - r2 = b sqrt(d)/(2*a)
-- Otherwise if d = 0 then
-  - compute r1 = -b/2a, r2=-b/2a
-  - print r1,r2 values
-- Otherwise if d < 0 then print roots are imaginary
-- Stop
-
+```
+Step  1: Start
+Step  2: Read number num
+Step  3: Set sum=0
+Step  4: Repeat step 5 to 9 while num
+Step  5: Set d=num mod 10
+Step  6: Set sum=sum+d
+Step  7: Set rev[i]=d
+Step  8: Set num=num/10
+Step  9: Set i++
+Step 10: Print sum
+Step 11: Print rev
+Step 12: Stop
+```
 ### Code:
 ```
-# include<stdio.h>
-# include<math.h>
-int main(){
-   float a,b,c,r1,r2,d;
-   printf ("enter the values of a b c: ");
-   scanf ("%f %f %f", &a, &b, &c);
-   d= b*b - 4*a*c;
-   if (d>0){
-      r1 = -b+sqrt (d) / (2*a);
-      r2 = -b-sqrt (d) / (2*a);
-      printf ("The real roots = %f %f", r1, r2);
+#include<stdio.h>
+
+#include<stdio.h>
+
+int main( )
+{
+   int num,sum=0,rev[10], d, i, j;
+   printf("Enter the number: ");
+   scanf("%d",&num);
+
+   while(num)
+   {
+      d=num%10;
+      sum=sum+d;
+      rev[i]=d;
+      num=num/10;
+      i++;
    }
-   else if (d==0){
-      r1 = -b/(2*a);
-      r2 = -b/(2*a);
-      printf ("roots are equal =%f %f", r1, r2);
+
+   printf("Sumof digits = %d",sum);
+   printf("\nReverse of the number = ");
+   for (j=0;j<i;j++)
+   {
+      printf("%d",rev[j]);
    }
-   else
-      printf("Roots are imaginary");
 }
 ```
-
 ### Output:
 ```
-enter the values of a b c: 1 2 1
-r1 = -1
-r2 = -1
+Enter the number: 987
+Sumof digits = 24
+Reverse of the number = 789
 ```
