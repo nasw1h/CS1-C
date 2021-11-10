@@ -43,12 +43,7 @@ int main(){
 
 ### Output:
 ```
-Case 1:
 enter the values of a b c: 1 2 1
 r1 = -1
 r2 = -1
-
-Case 2:
-enter the values of a b c: 1 1 4
-Roots are imaginary
 ```
