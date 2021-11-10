@@ -1,4 +1,4 @@
-# C Program
+# Program
 
 
 ## 1. C program to find the sum of a given number and its reverse.
