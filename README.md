@@ -3,7 +3,7 @@
 ## 1. C program to find the sum of a given number and its reverse.
 
 ### Algorithm:
-```
+```yml
 Step  1: Start
 Step  2: Read number num
 Step  3: Set sum=0
@@ -18,7 +18,7 @@ Step 11: Print rev
 Step 12: Stop
 ```
 ### Code:
-```
+```c
 #include<stdio.h>
 
 int main( )
@@ -45,8 +45,8 @@ int main( )
 }
 ```
 ### Output:
-```
+```yml
 Enter the number: 987
-Sumof digits = 24
+Sum of digits = 24
 Reverse of the number = 789
 ```
