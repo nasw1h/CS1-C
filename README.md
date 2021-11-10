@@ -2,7 +2,7 @@
 
 ## 1. C program to find the sum of a given number and its reverse.
 
-Algorithm:
+### Algorithm:
 ```
 Step  1: Start
 Step  2: Read number num
