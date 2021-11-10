@@ -96,7 +96,7 @@ Reverse of the number = 789
 
 ```
 
-## 5. C Program to check whether a number is Prime or not
+## 5. C program to check whether a number is Prime or not
 
 ### Algorithm:
 ```yml
