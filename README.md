@@ -56,7 +56,18 @@ Reverse of the number = 789
 
 ### Algorithm:
 ```yml
-
+Step  1: Start
+Step  2: Declare variables count, a,b , sum
+Step  3: Initialize the variables, a=0, b=1, and count =2
+Step  4: Enter the number of terms of Fibonacci series to be printed
+Step  5: Print First two terms of series
+Step  6: Use loop for the the steps 7 to 11 until count < n
+Step  7: sum=a+b
+Step  8: increase value of count each time by 1 
+Step  9: print the value of sum
+Step 10: a=b
+Step 11: b=sum
+Step 12: End
 ```
 ### Code:
 ```c
