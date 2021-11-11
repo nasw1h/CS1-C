@@ -58,16 +58,16 @@ Reverse of the number = 789
 ```yml
 Step  1: Start
 Step  2: Declare variables count, a,b , sum
-Step  3: Initialize the variables, a=0, b=1, and count =2
+Step  3: Initialize the variables a=0, b=1, and count =2
 Step  4: Enter the number of terms of Fibonacci series to be printed
 Step  5: Print First two terms of series
-Step  6: Use loop for the the steps 7 to 11 until count < n
+Step  6: Repeat step 7 to 11 while < n
 Step  7: sum=a+b
 Step  8: increase value of count each time by 1 
 Step  9: print the value of sum
 Step 10: a=b
 Step 11: b=sum
-Step 12: End
+Step 12: Stop
 ```
 ### Code:
 ```c
@@ -102,7 +102,21 @@ First 10 FIBONACCI numbers are: 0       1       1       2       3       5       
 
 ### Algorithm:
 ```yml
-
+Step  1: Start
+Step  2: Declare variables i, j, n, k
+Step  3: Initialize the variable k=0
+Step  4: Enter the number to define the rows
+Step  5: For (i = 1; i <= n; i++)
+         {
+           for (j = 0; j <= n - i; j++)
+               printf(" ");  
+               
+           for (k = 1; k <= i; k++)
+               printf(" *");
+               
+           printf("\n");
+         }
+Step  6: Stop
 ```
 ### Code:
 ```c
@@ -117,13 +131,11 @@ int main()
     for (i = 1; i <= n; i++)
     {
         for (j = 0; j <= n - i; j++)
-        {
             printf(" ");
-        }
+            
         for (k = 1; k <= i; k++)
-        {
             printf(" *");
-        }
+            
         printf("\n");
     }
 }
@@ -179,7 +191,12 @@ The total number of words in this string "Hi I am user"  = 4
 
 ### Algorithm:
 ```yml
-
+Step 1: Start
+Step 2: Take integer variable A
+Step 3: Divide the variable A with (A-1 to 2)
+Step 4: If A is divisible by any value (A-1 to 2) it is not prime
+Step 5: Else it is prime
+Step 6: Stop
 ```
 ### Code:
 ```c
