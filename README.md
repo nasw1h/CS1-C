@@ -24,6 +24,7 @@ Step 12: Stop
 int main( )
 {
    int num,sum=0,rev[10], d, i, j;
+   
    printf("Enter the number: ");
    scanf("%d",&num);
 
@@ -59,11 +60,31 @@ Reverse of the number = 789
 ```
 ### Code:
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int a = 0, b = 1, sum, n, count = 2;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    printf("First %d FIBONACCI numbers are: ", n);
+    printf("%d\t", a);
+    printf("%d\t", b);
+    while (count < n)
+    {
+        sum = a + b;
+        count++;
+        printf("%d\t", sum);
+        a = b;
+        b = sum;
+    }
+}
 ```
 ### Output:
 ```yml
-
+Enter the value of n: 10
+First 10 FIBONACCI numbers are: 0       1       1       2       3       5       8       13      21      34
 ```
 
 ## 3. C program to print pyramid pattern with *
@@ -74,11 +95,36 @@ Reverse of the number = 789
 ```
 ### Code:
 ```c
+#include <stdio.h>
+int main()
+{
+    int i, j, n, k = 0;
 
+    printf("Enter a number to define the rows: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 0; j <= n - i; j++)
+        {
+            printf(" ");
+        }
+        for (k = 1; k <= i; k++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+}
 ```
 ### Output:
 ```yml
-
+Enter a number to define the rows: 5
+      *
+     * *
+    * * *
+   * * * *
+  * * * * *
 ```
 
 ## 4. C program to find number of words in a sentence
@@ -89,11 +135,33 @@ Reverse of the number = 789
 ```
 ### Code:
 ```c
+#include <stdio.h>
+#include <string.h>
 
+int main()
+{
+    char str[200];
+    int i, count = 1;
+
+    printf("Please enter the string :  ");
+    gets(str);
+
+    if (str[0] == ' ' || str[0] == '\t')
+        count--;
+
+    for (i = 0; str[i] != '\0'; i++)
+        if ((str[i] == ' ' || str[i] == '\t') && (str[i + 1] != ' ' && str[i + 1] != '\t') && str[i + 1] != '\0')
+            count++;
+
+    printf("The total number of words in this string \"%s\"  = %d\n", str, count);
+
+    return 0;
+}
 ```
 ### Output:
 ```yml
-
+Please enter the string :  Hi I am user  
+The total number of words in this string "Hi I am user"  = 4
 ```
 
 ## 5. C program to check whether a number is Prime or not
@@ -104,9 +172,28 @@ Reverse of the number = 789
 ```
 ### Code:
 ```c
-
+#include <stdio.h>
+int main()
+{
+    int n, i, f = 0;
+    printf("Enter the number: ");
+    scanf("%d", &n);
+    for (i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            f = 1;
+            break;
+        }
+    }
+    if (f == 0)
+        printf("The given number is prime");
+    else
+        printf("The given number is not prime");
+}
 ```
 ### Output:
 ```yml
-
+Enter the number: 5
+The given number is prime
 ```
