@@ -1,21 +1,21 @@
 #include <stdio.h>
-
 int main()
 {
-    int a = 0, b = 1, sum, n, count = 2;
+    int i, j, n, k = 0;
 
-    printf("Enter the value of n: ");
+    printf("Enter a number to define the rows: ");
     scanf("%d", &n);
-    printf("First %d FIBONACCI numbers are: ", n);
-    printf("%d\t", a);
-    printf("%d\t", b);
-    
-    while (count < n)
+
+    for (i = 1; i <= n; i++)
     {
-        sum = a + b;
-        count++;
-        printf("%d\t", sum);
-        a = b;
-        b = sum;
+        for (j = 0; j <= n - i; j++)
+        {
+            printf(" ");
+        }
+        for (k = 1; k <= i; k++)
+        {
+            printf(" *");
+        }
+        printf("\n");
     }
 }
